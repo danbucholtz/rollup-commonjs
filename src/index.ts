@@ -1,3 +1,3 @@
-import * as lodash from 'lodash';
+import { capitalize } from 'lodash';
 
-console.log('how\'s it going?: ', lodash.capitalize('good'));
+console.log('how\'s it going?: ', capitalize('good'));
