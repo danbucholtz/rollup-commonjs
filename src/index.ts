@@ -1,5 +1,3 @@
-import lodash from 'lodash';
-
-console.log('Lodash: ', lodash);
+import * as lodash from 'lodash';
 
 console.log('how\'s it going?: ', lodash.capitalize('good'));
