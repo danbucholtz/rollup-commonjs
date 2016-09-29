@@ -6,6 +6,9 @@ rollup.rollup({
   entry: './dist/index.js',
   plugins: [
     nodeResolve({
+      module: true,
+      jsnext: true,
+      browser: true
     }),
     commonjs()
   ]

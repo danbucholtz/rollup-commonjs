@@ -1,5 +1,3 @@
-import lodash from 'lodash';
+import PouchDB from 'pouchdb';
 
-console.log('Lodash: ', lodash);
-
-console.log('how\'s it going?: ', lodash.capitalize('good'));
+console.log('PouchDB: ', PouchDB);
