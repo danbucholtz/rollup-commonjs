@@ -1,6 +1,10 @@
 var rollup = require('rollup');
-var nodeResolve = require('rollup-plugin-node-resolve');
-var commonjs = require('rollup-plugin-commonjs');
+//var nodeResolve = require('rollup-plugin-node-resolve');
+
+// use nolans plugin
+var nodeResolve = require('rollup-plugin-node-resolve-auto');
+
+//var commonjs = require('rollup-plugin-commonjs');
 
 rollup.rollup({
   entry: './dist/index.js',
@@ -10,7 +14,7 @@ rollup.rollup({
       jsnext: true,
       browser: true
     }),
-    commonjs()
+    //commonjs()
   ]
 }).then( function ( bundle ) {
   // Generate bundle + sourcemap
